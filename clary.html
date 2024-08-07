@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <!-- BOOTSTRAP -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="imgs/logoIOS.png">
+
+    <!-- ICONES  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+<!-- DATA AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <link rel="stylesheet" href="clary.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Clarice Fernandes </title>
+</head>
+<body>
+
+    
+    <header class="header">
+
+        <!-- DARKMODE -->
+  <section class="darkmode">
+    <label>
+        <input id="check" type="checkbox" id="check">
+  
+        <i class="fa-solid fa-sun" id="sun"></i>
+        <i class="fa-solid fa-moon" id="moon"></i>
+  
+        <span class="toggle"></span>
+    </label>
+  </section>
+  
+  
+  <!-- NAVBAR-------- -->
+  
+          <nav class="navbar">
+           
+              <a href="index.html"> Inicio </a>
+              <a href="#softskills"> Soft Skills</a>
+              <a href="#galeria"> Galeria </a>
+              <a href="#mensagem"> Mensagens </a>
+              
+              
+  <button id="btn-menu" onclick="animar()">
+    <span class="linha"></span>
+    <span class="linha"></span>
+    <span class="linha"></span>
+  </button>
+  
+  <!-- MOBILE -->
+  
+  <div class="menu-mobile" id="menu-mobile">
+  
+  <nav class="navbar-mobile">
+  
+              <a href="index.html"> Inicio </a>
+              <a href="#softskills"> Soft Skills</a>
+              <a href="#galeria"> Galeria </a>
+              <a href="#mensagem"> Mensagens </a>
+    
+  
+  </nav>
+  </div>
+  </div>
+  
+  
+  <script>
+  //mobile
+  
+  const menuDiv = document.getElementById('menu-mobile');
+  const btnAnimar = document.getElementById('btn-menu'); 
+  
+  menuDiv.addEventListener('click', animar)
+  
+  function animar(){
+  menuDiv.classList.toggle('abrir');
+  btnAnimar.classList.toggle('ativar');
+  }
+  
+  //final mobile
+  </script>
+  <!--  final mobile -->
+  
+  
+  
+  
+  <script>
+    const check = document.getElementById('check');
+  
+    check.addEventListener('click', () => {
+        document.body.classList.toggle('darkmode');
+    })
+  
+  
+  </script>
+  </nav>
+  </header>
+        
+  <!-- FOTO  -->
+
+
+<div class="home">
+<div class="home-content">
+
+  <h1> Clarice Fernandes </h1>
+  <h3> Professora de Extensão </h3>
+  <p> Busco desenvolver com minha atuação uma educação que atenda a todos e valorize as potencialidades de cada um. Meus alunos são desfiados a serem os protagonistas na construção de seus conhecimentos. Estou sempre buscando formação e me atualizando para as questões atuais na educação, como a tecnologia educacional.</p>
+
+
+
+  </div>
+  </div>
+  </div>
+
+
+<!-- SOFTSKILLS -->
+ 
+
+<div class="titulo-soft" id="softskills">
+  <h1> Soft Skills</h1>  
+</div>
+
+<div class="softskills">
+
+  <div class="icones-soft">
+    <i class="fa-solid fa-scale-balanced"></i>
+    <p> Gestão de conflitos </p>
+  </div>
+
+  <div class="icones-soft">
+    <i class="fa-solid fa-sitemap"></i>
+    <p> Capacidade de organização </p>
+  </div>
+
+  <div class="icones-soft">
+    <i class="fa-solid fa-people-group"></i>
+    <p> Trabalho em Equipe</p>
+  </div>
+
+  <div class="icones-soft">
+    <i class="fa-regular fa-clock"></i>
+    <p> Cumprimento de Prazos </p>
+  </div>
+
+  <div class="icones-soft">
+    <i class="fa-regular fa-comments"></i>
+    <p> Comunicação </p>
+  </div>
+  
+  <div class="icones-soft">
+    <i class="fa-solid fa-user-group"></i>
+    <p> Liderança </p>
+  </div>
+
+</div>
+
+
+
+ <!-- PARALLAX -->
+
+ <div class="wrapper">
+
+      <section class="modulo parallax parallax-1">
+          
+      </section>
+
+
+<!-- MENSAGENS -->
+
+<div class="titulo-mensagem" id="mensagem">
+  <h1> Mensagens dos alunos de 2023/24 </h1>
+</div>
+
+  <div class="container-msg">
+<div class="box-msg">
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h1>Eduarda Souza</h1>
+          <p> Eu queria agradecer, mas agradecer de coração mesmo, pq a senhora me deu oportunidades e me ajudou como ninguém nunca jamais fez, a senhora mudou a minha vida e nunca vou esquecer disso, vc fez parte da minha evolução como pessoa e como profissional, mesmo não falando muito contigo, sempre observei como vc ce importava realmente em ajudar o próximo e admiro muito isso, imensa GRATIDÃO💜💜💜💜</p>
+        </div>
+
+        <div class="carousel-item">
+          <h1> Júlia Souza</h1>
+          <p>Quero agradecer muito a senhora por sempre estar me apoiando e me motivando nos meus piores momentos, mesmo sabendo que não conversamos muito eu sempre observei suas atitudes e percebi que posso ser alguém na vida e conquistar minhas metas e sonhos de vida, a senhora foi uma luz e uma esperança na minha vida agradeço muito por esses momentos que tivemos juntas, espero que você conquiste seus sonhos e metas na vida.💜💜💜💜</p>
+        </div>
+
+        <div class="carousel-item">
+          <h1>Arthur dos Santos</h1>
+          <p>Oi Dona Clarice, me aprova no curso por favor obg😎👍</p>
+        </div>
+
+        <div class="carousel-item">
+          <h1>Gabriel Mendes</h1>
+          <p>Quero Agradecer a vocês por fazerem essas parte da minha vida tão especial, vou levar para vida toda</p>
+        </div>
+
+        <div class="carousel-item">
+          <h1>Gabriela Padilha</h1>
+          <p>Claro, não há palavras pra descrever a minha eterna gratidão por todos seus ensinamentos aos quais com certeza levarei pra toda a vida! 
+            Muito obrigada pelas conversas, puxões de orelha e risadas. 
+            Você me inspira! Continue sendo essa baita profissional e pessoa.</p>
+        </div>
+
+        <div class="carousel-item">
+          <h1>Henrike Pajares Braga</h1>
+          <p>Sora Clarice! Para mim tu é uma grande inspiração e um exemplo de determinação, obrigado de verdade por todo ensinamento que nos ensinou, levarei para vida toda, espero que nosso laços (João, Gustavo e você) vão além do curso. Obrigador por tanto, serei eternamente grato.</p>
+        </div>
+
+        <div class="carousel-item">
+          <h1>Mariana Rodrigues</h1>
+          <p>Quando eu iniciei o curso não imaginava quanto ele mudaria minha vida, graças a vocês Clarice, João e Gustavo, eu aprendi tantas coisas e não só sobre programação mas sobre a vida, sobre as pessoas, ter conhecido vocês foi um privilégio de grandeza imensurável, vocês são inspiração, diariamente eu queria me tornar uma versão melhor, pois é isso que vocês inspiram, a tornar-nos nossa melhor versão, serei grata eternamente por tudo que vocês me proporcionaram.</p>
+        </div>
+
+        <div class="carousel-item">
+          <h1>Nestor Preissler</h1>
+          <p>Chega ser difícil de colocar em palavras o quanto vocês mudaram minha vida… Depois de quase 11 meses de formação com vocês, aprendi muito, melhorei em diversos aspectos da minha vida, e eu só tenho a agradecer vocês. Vocês são profissionais excelentes 💜</p>
+        </div>
+
+        <div class="carousel-item">
+          <h1>Nathalia Domingues Freitas</h1>
+          <p>Sou muito grata a todos os professores, realmente foi bem acolhedor, tive a oportunidade de conhecer alguns amigos que fiz, e espero não ter dado problemas</p>
+        </div>
+
+        <div class="carousel-item">
+          <h1>Eduardo Xaubet Tarigo</h1>
+          <p>Dedico esta mensagem a todos os professores que nos acompanharam durante esta jornada que foi o curso de programação do IOS. Pude tê-los ao meu lado não apenas como professores, mas também como companheiros e amigos, que me acolheram e fizeram sentir em casa. Agradeço aos três por todos os ensinamentos, que me moldaram e mudaram minha forma de ver as coisas, me fizeram sentir mais confiante e me ajudaram a ter uma boa vista do que pode ser o futuro.</p>
+        </div>
+
+        <div class="carousel-item">
+          <h1>Michele Jeske </h1>
+          <p>Gostaria de agradecer por todo o ensinamento ao longo do curso, foi uma etapa importantíssima em minha vida. Agradeço por todo aprendizado e carinho, vocês são profissionais incríveis que sempre estarão em meu coração.</p>
+        </div>
+
+        <div class="carousel-item">
+          <h1> Mariane Silva </h1>
+          <p>Gostaria de agradecer a vocês pela dedicação que tiveram com todos nós muito abrigada</p>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  </div>
+
+<!-- GALERIA DE FOTOS -->
+
+<div class="titulo-galeria" id="galeria">
+  <h1>Galeria de Imagens</h1>
+</div>
+
+
+<div class="grid-wrapper">
+  <div class="img-galeria">
+    <img src="galeria.clary/img.clary.png" alt="">
+  </div>
+
+  <div class="img-galeria">
+    <img src="galeria.clary/img1.jpeg" alt="">
+  </div>
+
+  <div class="img-galeria">
+    <img src="galeria.clary/img2.jpeg" alt="">
+  </div>
+
+  <div class="img-galeria">
+    <img src="galeria.clary/img5.jpeg" alt="">
+  </div>
+
+  <div class="img-galeria">
+    <img src="galeria.clary/img3.jpeg" alt="">
+  </div>
+
+  <div class="img-galeria">
+    <img src="galeria.clary/img4.jpeg" alt="">
+  </div>
+
+  <div class="img-galeria">
+    <img src="galeria.clary/img7.jpeg" alt="">
+  </div>
+
+  <div class="img-galeria">
+    <img src="galeria.clary/img6.jpeg" alt="">
+  </div>
+
+  <div class="img-galeria">
+    <img src="galeria.clary/WhatsApp Image 2024-07-28 at 9.36.30 PM.jpeg" alt="">
+  </div>
+
+  <div class="img-galeria">
+    <img src="galeria.clary/WhatsApp Image 2024-07-28 at 9.33.51 PM.jpeg" alt="">
+  </div>
+
+  <div class="img-galeria">
+    <img src="img-mentores/art.clarice.jpeg" alt="">
+  </div>
+
+</div>
+
+
+
+
+<!-- FOOTER------------------ -->
+
+
+<footer>
+    <div class="footercontainer">
+      <div class="socialicons">
+    
+        <a href="https://www.instagram.com/claryfnandes/"><i class="fa-brands fa-instagram"></i></a>
+    
+        <a href="https://www.linkedin.com/in/clarice-fernandes-1b3b66115/"><i class="fa-brands fa-linkedin-in"></i></a>
+    
+       
+      </div>
+      <div class="footernav">
+    
+        <a href="index.html"> Inicio </a>
+        <a href="#softskills"> Soft Skills</a>
+        <a href="#galeria"> Galeria </a>
+        <a href="#mensagem"> Mensagem </a>
+    
+      </div>
+    </div>
+    
+    <div class="footerbottom">
+      <p> Desenvolvido por Eduarda Souza e Júlia Souza | Instituto da Oportunidade Social 2024</p>
+    </div>
+    
+    </footer>
+    
+    <!-- ACESSIBILIDADE -->
+    <script src="https://cdn.userway.org/widget.js" data-account="kCDHqw9ltL"></script>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    
+    <!-- LIBRAS -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    
+    <script>
+      AOS.init();
+    </script>
+    
+
+</body>
+</html>

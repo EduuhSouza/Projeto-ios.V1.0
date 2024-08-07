@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <link rel="shortcut icon" href="imgs/logoIOS.png">
+
+    <!-- ICONES  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- BOOTSTRAP -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+<!-- DATA AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <link rel="stylesheet" href="gugu.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gustavo Mota </title>
+</head>
+<body>
+
+    
+    <header class="header">
+
+        <!-- DARKMODE -->
+  <section class="darkmode">
+    <label>
+        <input id="check" type="checkbox" id="check">
+  
+        <i class="fa-solid fa-sun" id="sun"></i>
+        <i class="fa-solid fa-moon" id="moon"></i>
+  
+        <span class="toggle"></span>
+    </label>
+  </section>
+  
+  
+  <!-- NAVBAR-------- -->
+  
+          <nav class="navbar">
+           
+              <a href="index.html"> Inicio </a>
+              <a href="#softskills"> Soft Skills</a>
+              <a href="#galeria"> Galeria </a>
+              <a href="#mensagem"> Mensagens </a>
+              
+              
+  <button id="btn-menu" onclick="animar()">
+    <span class="linha"></span>
+    <span class="linha"></span>
+    <span class="linha"></span>
+  </button>
+  
+  <!-- MOBILE -->
+  
+  <div class="menu-mobile" id="menu-mobile">
+  
+  <nav class="navbar-mobile">
+  
+              <a href="index.html"> Inicio </a>
+              <a href="#softskills"> Soft Skills</a>
+              <a href="#galeria"> Galeria </a>
+              <a href="#mensagem"> Mensagens </a>
+    
+  
+  </nav>
+  </div>
+  </div>
+  
+  
+  <script>
+  //mobile
+  
+  const menuDiv = document.getElementById('menu-mobile');
+  const btnAnimar = document.getElementById('btn-menu'); 
+  
+  menuDiv.addEventListener('click', animar)
+  
+  function animar(){
+  menuDiv.classList.toggle('abrir');
+  btnAnimar.classList.toggle('ativar');
+  }
+  
+  //final mobile
+  </script>
+  <!--  final mobile -->
+  
+  
+  
+  
+  <script>
+    const check = document.getElementById('check');
+  
+    check.addEventListener('click', () => {
+        document.body.classList.toggle('darkmode');
+    })
+  
+  
+  </script>
+  </nav>
+  </header>
+        
+  <!-- FOTO  -->
+
+
+<div class="home">
+<div class="home-content">
+
+  <h1> Gustavo Mota</h1>
+  <h3> Monitor </h3>
+  <p>Atualmente, estou cursando Redes de Computadores e possuo conhecimentos em programação web full stack, manutenção de computadores e privacidade e proteção de dados (LGPD). Estou sempre em busca de novos desafios que me permitam aprender e crescer profissionalmente.</p>
+
+
+
+  </div>
+  </div>
+  </div>
+
+
+<!-- SOFTSKILLS -->
+ 
+
+<div class="titulo-soft" id="softskills">
+  <h1> Soft Skills</h1>  
+</div>
+
+<div class="softskills">
+
+  <div class="icones-soft">
+    <i class="fa-solid fa-scale-balanced"></i>
+    <p> Gestão de conflitos </p>
+  </div>
+
+  <div class="icones-soft">
+    <i class="fa-solid fa-sitemap"></i>
+    <p> Capacidade de organização </p>
+  </div>
+
+  <div class="icones-soft">
+    <i class="fa-solid fa-people-group"></i>
+    <p> Trabalho em Equipe</p>
+  </div>
+
+  <div class="icones-soft">
+    <i class="fa-regular fa-clock"></i>
+    <p> Cumprimento de Prazos </p>
+  </div>
+
+  <div class="icones-soft">
+    <i class="fa-regular fa-comments"></i>
+    <p> Comunicação </p>
+  </div>
+  
+  <div class="icones-soft">
+    <i class="fa-solid fa-user-group"></i>
+    <p> Liderança </p>
+  </div>
+
+</div>
+
+
+
+ <!-- PARALLAX -->
+
+ <div class="wrapper">
+
+      <section class="modulo parallax parallax-1">
+          
+      </section>
+
+
+
+<!-- ARTE -->
+<!-- 
+<div class="arte">
+  <img src="img-mentores/arte.joao.jpeg" alt="">
+</div> -->
+
+<!-- MENSAGENS -->
+
+<div class="titulo-mensagem" id="mensagem">
+  <h1> Mensagens dos alunos de 2023/24 </h1>
+</div>
+
+<div class="container-msg">
+  <div class="box-msg">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h1>Eduarda Souza</h1>
+            <p>Vc nos auxiliou muito e nos ajudou a superar obstáculos durante o curso e durante a nossa evolução, queria agradecer imensamente e dizer que tu é uma inspiração  para mim, ce tem um futuro brilhante pela frente Gustavo, siga em frente e n esqueça do suco!!🧃🧃</p>
+          </div>
+
+          <div class="carousel-item">
+            <h1> Júlia Souza</h1>
+            <p>Você é um exemplo de pessoa e de colega, agradeço por me ajudar nos perrengue da programação kkkkk, e por sempre me fazer rir nos momentos em que eu estava triste, fico muito grata por ter tido essa experiencia com todos os mentores e colegas, você é uma inspiração a se seguir, espero que você conquiste seus sonhos e metas na vida.💜💜💜💜</p>
+          </div>
+  
+          <div class="carousel-item">
+            <h1>Eduardo Xaubet Tarigo</h1>
+            <p>Dedico esta mensagem a todos os professores que nos acompanharam durante esta jornada que foi o curso de programação do IOS. Pude tê-los ao meu lado não apenas como professores, mas também como companheiros e amigos, que me acolheram e fizeram sentir em casa. Agradeço aos três por todos os ensinamentos, que me moldaram e mudaram minha forma de ver as coisas, me fizeram sentir mais confiante e me ajudaram a ter uma boa vista do que pode ser o futuro.</p>
+          </div>
+  
+          <div class="carousel-item">
+            <h1>Gabriel Mendes</h1>
+            <p>Quero Agradecer a vocês por fazerem essas parte da minha vida tão especial, vou levar para vida toda</p>
+          </div>
+
+          <div class="carousel-item">
+            <h1>Gabriela Padilha</h1>
+            <p>Claro, não há palavras pra descrever a minha eterna gratidão por todos seus ensinamentos aos quais com certeza levarei pra toda a vida! 
+              Muito obrigada pelas conversas, puxões de orelha e risadas. 
+              Você me inspira! Continue sendo essa baita profissional e pessoa.</p>
+          </div>
+  
+          <div class="carousel-item">
+            <h1>Henrike Pajares Braga</h1>
+            <p>Gustavo!!! tu é um cara nota 10, sempre humilde e com muito a nos ensinar e nos ajudar, tu é um exemplo de dedicação! Obrigado por todo auxílio, todo apoio que tu deu, tu foi essencial em nossa jornada.</p>
+          </div>
+  
+          <div class="carousel-item">
+            <h1>Mariana Rodrigues</h1>
+            <p>Quando eu iniciei o curso não imaginava quanto ele mudaria minha vida, graças a vocês Clarice, João e Gustavo, eu aprendi tantas coisas e não só sobre programação mas sobre a vida, sobre as pessoas, ter conhecido vocês foi um privilégio de grandeza imensurável, vocês são inspiração, diariamente eu queria me tornar uma versão melhor, pois é isso que vocês inspiram, a tornar-nos nossa melhor versão, serei grata eternamente por tudo que vocês me proporcionaram.</p>
+          </div>
+  
+          <div class="carousel-item">
+            <h1>Nestor Preissler</h1>
+            <p>Chega ser difícil de colocar em palavras o quanto vocês mudaram minha vida… Depois de quase 11 meses de formação com vocês, aprendi muito, melhorei em diversos aspectos da minha vida, e eu só tenho a agradecer vocês. Vocês são profissionais excelentes 💜</p>
+          </div>
+  
+          <div class="carousel-item">
+            <h1>Nathalia Domingues Freitas</h1>
+            <p>Sou muito grata a todos os professores, realmente foi bem acolhedor, tive a oportunidade de conhecer alguns amigos que fiz, e espero não ter dado problemas</p>
+          </div>
+
+          <div class="carousel-item">
+            <h1>Michele Jeske </h1>
+            <p>Gostaria de agradecer por todo o ensinamento ao longo do curso, foi uma etapa importantíssima em minha vida. Agradeço por todo aprendizado e carinho, vocês são profissionais incríveis que sempre estarão em meu coração.</p>
+          </div>
+
+          <div class="carousel-item">
+            <h1> Mariane Silva </h1>
+            <p>Gostaria de agradecer a vocês pela dedicação que tiveram com todos nós muito abrigada</p>
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    </div>
+
+
+<!-- GALERIA DE FOTOS -->
+
+<div class="titulo-galeria" id="galeria">
+  <h1>Galeria de Imagens</h1>
+</div>
+
+
+<div class="grid-wrapper">
+  <div class="img-galeria">
+    <img src="galeria.gugu/img1.jpeg" alt="">
+  </div>
+
+  <div class="img-galeria">
+    <img src="galeria.clary/WhatsApp Image 2024-07-28 at 9.33.51 PM (1).jpeg" alt="">
+  </div>
+
+  <div class="img-galeria">
+    <img src="galeria.gugu/img4.jpeg" alt="">
+  </div>
+
+  <div class="img-galeria">
+    <img src="img.parallax/WhatsApp Image 2024-07-23 at 11.46.06 PM.jpeg" alt="">
+  </div>
+
+  <div class="img-galeria">
+    <img src="galeria.gugu/img5.jpeg" alt="">
+  </div>
+
+  <div class="img-galeria">
+    <img src="galeria.clary/WhatsApp Image 2024-07-28 at 9.36.30 PM.jpeg" alt="">
+  </div>
+
+  <div class="img-galeria">
+    <img src="img-mentores/art.gustavo.jpeg" alt="">
+  </div>
+
+</div>
+
+
+
+
+<!-- FOOTER------------------ -->
+
+
+<footer>
+    <div class="footercontainer">
+      <div class="socialicons">
+    
+        <a href="https://www.instagram.com/gustavomota27/"><i class="fa-brands fa-instagram"></i></a>
+    
+        
+        <a href="https://www.linkedin.com/in/gustavo-mota-6bb39b1bb/"><i class="fa-brands fa-linkedin-in"></i></a>
+    
+       
+      </div>
+      <div class="footernav">
+    
+        <a href="index.html"> Inicio </a>
+        <a href="#softskills"> Soft Skills</a>
+        <a href="#galeria"> Galeria </a>
+        <a href="#mensagem"> Mensagem </a>
+    
+      </div>
+    </div>
+    
+    <div class="footerbottom">
+      <p> Desenvolvido por Eduarda Souza e Júlia Souza | Instituto da Oportunidade Social 2024</p>
+    </div>
+    
+    </footer>
+    
+    <!-- ACESSIBILIDADE -->
+    <script src="https://cdn.userway.org/widget.js" data-account="kCDHqw9ltL"></script>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    
+    <!-- LIBRAS -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    
+    <script>
+      AOS.init();
+    </script>
+    
+
+</body>
+</html>

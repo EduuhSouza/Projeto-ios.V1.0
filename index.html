@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <link rel="shortcut icon" href="imgs/logoIOS.png">
+
+    <!-- ICONES  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- BOOTSTRAP  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<!-- DATA AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Homenagem </title>
+</head>
+<body>
+
+  
+    <header class="header">
+
+      <!-- DARKMODE -->
+<section class="darkmode">
+  <label>
+      <input id="check" type="checkbox" id="check">
+
+      <i class="fa-solid fa-sun" id="sun"></i>
+      <i class="fa-solid fa-moon" id="moon"></i>
+
+      <span class="toggle"></span>
+  </label>
+</section>
+
+
+<!-- NAVBAR-------- -->
+
+        <nav class="navbar">
+            <a href="#sobre"> Sobre o IOS </a>
+            <a href="#mentores"> Mentores POA</a>
+            <a href="#cursos"> Cursos </a>
+            <a href="#unidades"> Unidades </a>
+            <a href="#parceiros"> Parceiros </a>
+            
+<button id="btn-menu" onclick="animar()">
+  <span class="linha"></span>
+  <span class="linha"></span>
+  <span class="linha"></span>
+</button>
+
+<!-- MOBILE -->
+
+<div class="menu-mobile" id="menu-mobile">
+
+<nav class="navbar-mobile">
+
+  <a href="#sobre"> Sobre o IOS </a>
+  <a href="#mentores"> Mentores POA </a>
+  <a href="#cursos"> Cursos </a>
+  <a href="#unidades"> Unidades </a>
+  <a href="#parceiros"> Parceiros </a>
+
+</nav>
+</div>
+</div>
+
+<script>
+//mobile
+
+const menuDiv = document.getElementById('menu-mobile');
+const btnAnimar = document.getElementById('btn-menu'); 
+
+menuDiv.addEventListener('click', animar)
+
+function animar(){
+menuDiv.classList.toggle('abrir');
+btnAnimar.classList.toggle('ativar');
+}
+
+//final mobile
+</script>
+<!--  final mobile -->
+
+<script>
+  const check = document.getElementById('check');
+
+  check.addEventListener('click', () => {
+      document.body.classList.toggle('darkmode');
+  })
+
+</script>
+</nav>
+</header>
+
+    <section class="home">
+        <div class="content">
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img.carrossel/1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img.carrossel/2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img.carrossel/3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div> 
+        </div>
+    </section>
+
+    <!-- ICONES VALORES, MISSAO, ETC -->
+
+    <div class="icon-empresa" data-aos="fade-right">
+    <div class="icon">
+      <i class="fa-solid fa-hands-holding-child"></i>
+      <h2 class="icon-p">Valores</h2>
+      <p> Somos um agente de transformação alicerçado em: Integridade, Ética, Respeito, Dedicação, Busca do Conhecimento e Espírito de Equipe. 
+      </p>
+
+    </div>
+
+    <div class="icon">
+      <i class="fa-solid fa-crosshairs"> </i>
+      <h2 class="icon-p">Propósito</h2>
+      <p> Cocriar oportunidades de empregabilidade e geração de renda para as juventudes, por meio da formação profissional gratuita em tecnologia.
+      </p>
+
+    </div>
+
+    <div class="icon">
+      <i class="fa-regular fa-eye"></i>
+      <h2 class="icon-p"> Visão</h2>
+      <p>Ser a escolha natural dos nossos públicos de relacionamento, pela formação de talentos e inclusão produtiva
+      </p>
+
+    </div>
+
+    <div class="icon">
+     <i class="fa-solid fa-chart-line"> </i>
+     <h2 class="icon-p">Missão</h2>
+      <p>Nossa Missão é cocriar oportunidades de empregabilidade e geração de renda para as juventudes, por meio da formação profissional gratuita em tecnologia.
+      </p>
+
+    </div>
+    </div>
+
+      <!--  PARALLAX 1 -->
+      <div class="wrapper">
+        <main>
+            <section class="modulo parallax parallax-1">
+                <h1> PAIXÃO EM APRENDER</h1>
+            </section>
+
+            <section class="modulo content">
+            
+                </section>
+            </section>
+        </main>
+    </div>
+
+    <!-- SOBRE O IOS -->
+
+    <div class="box" id="sobre">
+      <div class="box-titulo">
+        <h1> IOS </h1>
+        <p> Conheça o Instituto</p>
+      </div>
+      <div class="texto">
+        <p> O Instituto da Oportunidade Social (IOS) é uma Entidade Beneficente de Assistência Social certificada pelo CEBAS, que desde 1998 atua promovendo a formação profissional gratuita e a empregabilidade de jovens e Pessoas com Deficiência.
+          <br>
+          <br>
+          O IOS forma profissionais que agregam em sua bagagem, além do conhecimento técnico e capacitação teórica, competências comportamentais que o mundo do trabalho busca, como o cuidado com as relações, respeito às diferenças, trabalho em equipe, solução criativa de problemas, sempre embasados por uma mentalidade inovadora.</p>
+      </div>
+    </div>
+
+    <!-- CURSOS -->
+
+    <h1 class="cursos">
+      CURSOS
+    </h1>
+
+<div class="cursos-card" id="cursos">
+
+    <div class="box-cursos">
+      <div class="titulo-curso"> Análise de Dados com Microsoft Power BI</div>
+      <div class="texto-cursos">
+        <p>✓Excel Essencial 
+<br>
+          ✓Microsoft Power BI 
+<br>      
+          ✓Comunicação e Expressão 
+<br>      
+          ✓Cálculo Matemático 
+<br>      
+          ✓Comportamento e Empregabilidade   </p>
+      </div>
+      <div class="duracao-cursos">
+        <i class="fa-solid fa-hourglass-half"></i>
+        <p> 4 meses </p>
+
+        <i class="fa-regular fa-clock"></i>
+        <p> 300 horas </p>
+      </div>
+      
+    </div>
+
+
+   
+    <div class="box-cursos">
+      <div class="titulo-curso"> Fundamentos da Computação em Nuvem - Cloud Essencials</div>
+      <div class="texto-cursos">
+        <p>✓Introdução à Computação em Nuvem 
+<br>
+          ✓Perspectivas de Negócio
+<br>
+          ✓Inteligência Artificial 
+<br>          
+          ✓Infraestrutura 
+<br>      
+          ✓Serviços de Nuvem 
+<br>        
+          ✓Segurança de Nuvem 
+<br>
+          ✓Comunicação e Expressão
+<br>      
+          ✓Comportamento e Empregabilidade  </p>
+      </div>
+      <div class="duracao-cursos">
+        <i class="fa-solid fa-hourglass-half"></i>
+        <p> 4 meses </p>
+
+        <i class="fa-regular fa-clock"></i>
+        <p> 300 horas </p>
+      </div>
+      
+    
+    </div>
+    </div>
+
+
+    <!--  CARDS 2-------- -->
+
+    <div class="cursos-card" id="cursos">
+
+    <div class="box-cursos">
+      <div class="titulo-curso"> Comunicação e Mídias Sociais</div>
+      <div class="texto-cursos">
+        <p>✓Produção e tratamento de fotografia
+<br>
+          ✓Áudio e vídeo
+<br>      
+          ✓Gestão de mídias sociais
+<br>     
+          ✓Conteúdos de comunicação
+<br>      
+          ✓Raciocínio lógico
+<br>      
+          ✓Cidadania e empregabilidade</p>
+      </div>
+      <div class="duracao-cursos">
+        <i class="fa-solid fa-hourglass-half"></i>
+        <p> 4 meses </p>
+
+        <i class="fa-regular fa-clock"></i>
+        <p> 300 horas </p>
+      </div>
+      
+    </div>
+    
+
+   
+    <div class="box-cursos">
+      <div class="titulo-curso"> Gestão Empresarial</div>
+      <div class="texto-cursos">
+        <p>✓Processos e rotinas administrativas
+<br>
+          ✓ERP TOTVS
+<br>      
+          ✓Ferramentas do Pacote Microsoft Office
+<br>      
+          ✓Comunicação e expressão
+<br>      
+          ✓Cálculo matemático
+<br>      
+          ✓Cidadania e empregabilidade</p>
+      </div>
+      <div class="duracao-cursos">
+        <i class="fa-solid fa-hourglass-half"></i>
+        <p> 4 meses </p>
+
+        <i class="fa-regular fa-clock"></i>
+        <p> 300 horas </p>
+      </div>
+      
+    </div>
+    </div>
+
+
+    <!-- CARDS 3 -->
+
+    <div class="cursos-card" id="cursos">
+
+    <div class="box-cursos">
+      <div class="titulo-curso"> Gestão de Plataforma Zendesk</div>
+      <div class="texto-cursos">
+        <p>✓Como receber e resolver solicitações por meio do Zendesk Support
+<br>
+          ✓Realizar atendimentos em tempo real com a ajuda do Zendesk Chat
+<br>      
+          ✓Personalizar uma Central de Ajuda com o Zendesk Guide
+<br>      
+          ✓Analisar e manipular dados com o auxílio do Zendesk Explore
+<br>      
+          ✓Conteúdos de comportamento
+<br>      
+          ✓Cidadania e empregabilidade  </p>
+      </div>
+      <div class="duracao-cursos">
+        <i class="fa-solid fa-hourglass-half"></i>
+        <p> 4 meses </p>
+
+        <i class="fa-regular fa-clock"></i>
+        <p> 300 horas </p>
+      </div>
+      
+    </div>
+   
+    <div class="box-cursos">
+      <div class="titulo-curso"> Programação Web</div>
+      <div class="texto-cursos">
+        <p>✓HTML
+<br>
+          ✓CSS
+<br>      
+          ✓Javascript
+<br>      
+          ✓React
+<br>      
+          ✓Operacionalização dessas ferramentas
+<br>      
+          ✓Criação, estilização e interações para sites.
+<br>      
+          ✓O curso conta também com conteúdos de comportamento, cidadania e empregabilidade. </p>
+      </div>
+      <div class="duracao-cursos">
+        <i class="fa-solid fa-hourglass-half"></i>
+        <p> 4 meses </p>
+
+        <i class="fa-regular fa-clock"></i>
+        <p> 300 horas </p>
+      </div>
+      
+    </div>
+    </div>
+
+<!-- CARDS 4----------- -->
+    <div class="cursos-card" id="cursos">
+
+    <div class="box-cursos">
+      <div class="titulo-curso">Microsoft Essencial</div>
+      <div class="texto-cursos">
+        <p>✓Microsoft Word
+<br>
+          ✓Excel
+<br>      
+          ✓Powepoint
+<br>      
+          ✓Editar textos e documentos
+<br>      
+          ✓Usar fórmulas para fazer cálculos
+<br>      
+          ✓Outlook
+<br>
+          ✓Windows</p>
+      </div>
+      <div class="duracao-cursos">
+        <i class="fa-solid fa-hourglass-half"></i>
+        <p> 4 meses </p>
+
+        <i class="fa-regular fa-clock"></i>
+        <p> 300 horas </p>
+      </div>
+      
+    </div>
+  
+    <div class="box-cursos">
+      <div class="titulo-curso"> Suporte em TI</div>
+      <div class="texto-cursos">
+        <p>✓Informática
+<br>
+          ✓Sistemas Operacionais
+<br>      
+          ✓Instalações e Reparos
+<br>      
+          ✓Plataforma Lead Dell
+<br>
+          ✓Comunicação e expressão
+<br>      
+          ✓ Cálculo Matemática
+<br>      
+          ✓Empregabilidade</p>
+      </div>
+      <div class="duracao-cursos">
+        <i class="fa-solid fa-hourglass-half"></i>
+        <p> 4 meses </p>
+
+        <i class="fa-regular fa-clock"></i>
+        <p> 300 horas </p>
+      </div>
+      
+    </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- PARALLAX-2 -->
+
+  <div class="wrapper">
+        <section class="modulo parallax parallax-2">
+          
+        </section>
+
+        <section class="modulo content">
+        
+            </section>
+        </section>
+</div>
+
+<div class="titulo-fato">
+<h1> Indicadores que fazem a </h1> <span class="titulo-fato">Diferença</span>
+</div>
+
+<div class="fato">
+  <div class="icon-fato">
+    <i class="fa-solid fa-graduation-cap"></i>
+    <h1> 43 mil </h1>
+    <p> alunos formados</p>
+  </div>
+
+  <div class="icon-fato">
+    <i class="fa-solid fa-file-pen"></i>
+    <h1> +3 mil </h1>
+    <p> Alunos matriculados ao ano, em média</p>
+  </div>
+  
+  <div class="icon-fato">
+    <i class="fa-solid fa-user-graduate"></i>
+    <h1> + 2,6 mil </h1>
+    <p> Alunos formados por ano, em média </p>
+  </div>
+
+  <div class="icon-fato">
+    <i class="fa-solid fa-clipboard-check"></i>
+    <h1> 80% </h1>
+    <p>  índice médio de aprovação 
+    </p>
+  </div>
+
+  <div class="icon-fato">
+    <i class="fa-solid fa-briefcase"></i>
+    <h1> 1400 </h1>
+    <p> alunos empregados anualmente, em média
+    </p>
+  </div>
+
+  <div class="icon-fato">
+    <i class="fa-solid fa-ranking-star"></i>
+    <h1> 63%
+    </h1>
+    <p> De impacto na renda familiar dos alunos empregados 
+    </p>
+  </div>
+</div>
+
+<!-- ACOMO ATUAMOS -->
+
+<div class="atuacao">
+  <h1> COMO ATUAMOS </h1>
+    <h3> Colaboramos com o desenvolvimento das empresas e de nossos alunos</h3>
+  
+  <p>Oferecemos formação profissional gratuita nas áreas de Administração e Tecnologia da Informação (TI) a partir de um modelo de ensino híbrido.</p>
+</div>
+
+<div class="card-atuacao">
+  <h2> Além disso, oferecemos apoio aos alunos através de: </h2>
+
+<!-- Equipe Psicossocial -->
+<section class="card">
+
+  <img src="https://static.vecteezy.com/ti/fotos-gratis/t1/22602806-livro-e-cerebro-moderno-ideia-e-conceito-ilustracao-negocios-ideia-conceito-com-a-aberto-livro-cerebro-e-livro-em-uma-verde-background-generative-ai-foto.jpg" alt="">
+
+<div>
+  <h3> Equipe Psicossocial </h3>
+<p> Apoio durante a formação para condução de temas que podem impactar o desenvolvimento do jovem no curso; 
+</p>
+
+</div>
+
+</section>
+
+<!-- Programa IOS de Acesso ao Ensino Superior: -->
+<section class="card">
+
+  <img src="https://blog.portalpos.com.br/app/uploads/2024/01/o-que-e-ensino-superior.jpg" alt="">
+
+<div>
+  <h3> Programa IOS de Acesso ao Ensino Superior: </h3>
+<p> Articulação com faculdades para conquista de bolsas de estudos parciais ou totais para os alunos formados pelo IOS
+</p>
+
+</div>
+
+</section>
+
+
+<!-- Suporte pedagógico e psicopedagógico -->
+<section class="card">
+
+  <img src="https://www.alphafono.com.br/wp-content/uploads/2014/05/psicopedagogia.jpg" alt="">
+
+<div>
+  <h3> Suporte pedagógico e psicopedagógico </h3>
+<p> para eventuais dificuldades no processo de aprendizagem e apoio aos alunos que ingressam no ensino superior por intermédio do Instituto. 
+</p>
+
+</div>
+
+</section>
+
+<!-- Núcleo IOS de Oportunidades -->
+<section class="card" >
+
+  <img src="https://gaea.com.br/wp-content/uploads/2016/05/Inova%C3%A7%C3%A3o_na_Gest%C3%A3o_de_TI_conhe%C3%A7a_x_dicas_para_acelerar_o_neg%C3%B3cio.jpg.jpeg" alt="">
+
+<div>
+  <h3> Núcleo IOS de Oportunidades </h3>
+<p> Apoio na conquista de oportunidades de trabalho para vagas de jovem aprendiz, estagio ou efetivo (CLT) para os alunos formados. 
+</p>
+
+</div>
+
+</section>
+
+<!-- Empreendedorismo -->
+<section class="card">
+
+  <img src="https://pefmbddiag.blob.core.windows.net/cdn-blog-pi/output/img/materia/16ae6e60-8bcc-48e5-b00d-ef10c44c302d.jpg" alt="">
+
+<div>
+  <h3> Empreendedorismo </h3>
+<p> Tema trabalhado em sala de aula de diversas formas, seja por meio do intraempreendedorismo, dentro das empresas em que os alunos forem trabalhar, ou dos caminhos para criarem seus próprios negócios ou desenvolver os negócios das famílias. 
+</p>
+
+</div>
+
+</section>
+</div>
+
+<!-- CARD DAS UNIDADES -->
+
+<div class="titulo-uni" id="unidades">
+  <h1> Conheça nossas unidades </h1>
+</div>
+
+<div class="card-unidades">
+  <div class="card_container">
+    <article class="card_article">
+      <img src="https://i.pinimg.com/736x/1a/d8/bd/1ad8bd5a34f9ceda0ae3c17436779de5.jpg" alt="" class="card_img"> 
+
+      <div class="card_data">
+        <h2 class="card_titulo"> São Paulo
+        </h2>
+       <p class="card_descricao"><span>Santana -</span>Sede do IOS
+       </p>
+
+       <p class="card_descricao"><span>Itaquera -</span>Obra Social Dom Bosco
+       </p>
+
+       <p class="card_descricao"><span>Jardim Ângela -</span>Sociedade Santos Mártires
+       </p>
+
+       <p class="card_descricao"><span>Santo Amaro -</span>NURAP
+       </p>
+       
+       <p class="card_descricao"><span>Zona Norte -</span>Instituto Resgatando Vidas
+       </p>
+
+       <p class="card_descricao"><span>Zona Leste -</span>Rede Comunitá
+       </p>
+        
+
+      </div>
+    </article>
+
+    <article class="card_article">
+      <img src="https://nexo-uploads-beta.s3.amazonaws.com/wp-content/uploads/images/2023/12/21100647/22470801584_21d6c8bb77_k_binary_250839-640x640.jpg" alt="" class="card_img"> 
+
+      <div class="card_data">
+        <h2 class="card_titulo"> Grande São Paulo
+        </h2>
+       <p class="card_descricao"><span>Diadema -</span> Obra Social São Francisco Xavier
+       </p>
+
+       <p class="card_descricao"><span>Hortolândia -</span> ADRA – Núcleo Vinde a Mim
+       </p>
+
+       <p class="card_descricao"><span>Barueri -</span>PROJOV
+
+       </p>
+
+      </div>
+    </article>
+
+    <article class="card_article">
+      <img src="https://i.pinimg.com/736x/04/71/c2/0471c2d88726391494f594b09a1a38e1.jpg" alt="" class="card_img"> 
+
+      <div class="card_data">
+        <h2 class="card_titulo"> Minas Gerais
+        </h2>
+       <p class="card_descricao"><span>Belo Horizonte -</span> Unidade São Gabriel
+       </p>
+
+       <p class="card_descricao"><span>Belo Horizonte -</span> Unidade Barreiro
+       </p>
+
+       <p class="card_descricao"><span>Barueri -</span>PROJOV
+       </p>
+
+    
+      </div>
+    </article>
+
+    <article class="card_article">
+      <img src="https://i.pinimg.com/736x/66/f7/c4/66f7c470e45b9950e89c6d91483420c6.jpg" alt="" class="card_img"> 
+
+      <div class="card_data">
+        <h2 class="card_titulo"> Pernambuco:
+        </h2>
+       <p class="card_descricao"><span>Recife</span>
+       </p>
+    
+      </div>
+    </article>
+
+    <article class="card_article">
+      <img src="https://live.staticflickr.com/651/22731310732_5fd1923ccb_z.jpg" alt="" class="card_img"> 
+
+      <div class="card_data">
+        <h2 class="card_titulo"> Rio Grande do Sul
+        </h2>
+       <p class="card_descricao"><span>Porto Alegre</span> UniRitter – Campus FAPA
+       </p>
+
+    
+      </div>
+    </article>
+  </div>
+</div>
+
+<!-- PARCEIROS -->
+
+<div class="parceiros" id="parceiros">
+  <img src="imgs/4.jpg" alt="">
+</div>
+  <div class="parceiros" id="parceiros">
+  <img src="imgs/5.jpg" alt="">
+</div>
+<div class="parceiros" id="parceiros">
+  <img src="imgs/6.jpg" alt="">
+</div>
+<div class="parceiros" id="parceiros">
+<img src="imgs/7.jpg" alt="">
+</div>
+
+ <!-- ANIMAÇÃO -->
+<div class="wrapper1">
+  <div class="box1">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+  </div>
+</div>
+<!-- ANIMAÇÃO -->
+
+<!-- MENTROES ------------ -->
+
+<div class="titulo-ment">
+  <h1> Mentores </h1>
+</div>
+
+
+<div class="display-container-ment">
+<div class="container-mentores">
+
+
+  <!-- JOAO -->
+<div class="mentores" id="mentores">
+<div class="image-section">
+  <img src="img-mentores/joao.jpeg" alt="">
+</div>
+
+<div class="texto-mentores">
+  <span> João Henrique</span>
+  <span> Professor TI</span>
+  <p>" Tu te tornas eternamente responsável por aquilo que cativas"</p>
+  
+  <a class="btn-mentores" href="zoon.html"> Saiba Mais </a>
+  <div class="icon-social-ment">
+<a href="https://www.instagram.com/joaohenrique35/"><i class="fa-brands fa-instagram"></i></a>
+
+  </div>
+</div>
+</div>
+
+</div>
+
+<!-- CLARICE -->
+<div class="mentores" id="mentores">
+<div class="image-section">
+  <img src="img-mentores/clarice.jpeg" alt="">
+</div>
+
+<div class="texto-mentores">
+  <span> Clarice Fernandes</span>
+  <span> Professora</span>
+  <p>"Carrego comigo tudo aquilo que me causa encanto. O resto eu deixo passar..."</p>
+  
+  <a class="btn-mentores" href="clary.html"> Saiba Mais </a>
+  <div class="icon-social-ment">
+<a href="https://www.instagram.com/claryfnandes/"><i class="fa-brands fa-instagram"></i></a>
+
+  </div>
+</div>
+</div>
+<!-- final container mentores -->
+
+<!-- GUSTAVO -->
+<div class="mentores" id="mentores">
+<div class="image-section">
+  <img src="img-mentores/gustavo.jpeg" alt="">
+</div>
+
+<div class="texto-mentores">
+  <span> Gustavo Mota</span>
+  <span> Monitor</span>
+  <p>"Transforme bugs em aprendizado, cada erro é uma oportunidade de crescimento."</p>
+  
+  <a class="btn-mentores" href="gugu.html"> Saiba Mais </a>
+  <div class="icon-social-ment">
+<a href="https://www.instagram.com/gustavomota27/"><i class="fa-brands fa-instagram"></i></a>
+
+  </div>
+</div>
+
+</div>
+<!-- final container mentores -->
+
+</div>
+<!-- FINAL CONTAIENR DISPLAY -->
+ 
+<!-- DESENVOLVEDORES -->
+
+<div class="titulo-dev">
+  <h1> Desenvolvedoras</h1>
+</div>
+
+<div class="container-devs">
+  
+  <div class="mentores" id="mentores">
+    <div class="image-section">
+      <img src="img-devs/edu.jpeg" alt="">
+    </div>
+    
+    <div class="texto-mentores">
+      <span> Eduarda Souza</span>
+      <span> Aluna do IOS </span>
+      <p>"Sonhos exigem paciência no resultado e dedicação no processo"</p>
+      
+    
+      <div class="icon-social-ment">
+    <a href="https://www.instagram.com/souza.eduuh/"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://github.com/EduuhSouza"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+
+</div>
+
+<!-- JULIA -->
+  <div class="mentores" id="mentores">
+    <div class="image-section">
+      <img src="img-devs/img.xulia.jpeg" alt="">
+    </div>
+    
+    <div class="texto-mentores">
+      <span> Júlia Souza</span>
+      <span> Aluna do IOS </span>
+      <p>“A natureza é o que sabemos sem ter a arte de exprimi-lo.” <br>
+        Emily Dickinson</p>
+     
+      <div class="icon-social-ment">
+    <a href="https://www.instagram.com/juliasouzak4/"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://github.com/juuhSouza"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+
+</div>
+</div>
+
+<!-- FOOTER------------------ -->
+<footer>
+<div class="footercontainer">
+  <div class="socialicons">
+    <a href="https://www.facebook.com/IOS.Oficial"> <i class="fa-brands fa-facebook"></i></a>
+
+    <a href="https://www.instagram.com/iosoficial/"><i class="fa-brands fa-instagram"></i></a>
+
+    <a href="https://www.youtube.com/user/institutoios"> <i class="fa-brands fa-youtube"></i></a>
+
+    <a href="https://www.linkedin.com/company/iosoficial/mycompany/"><i class="fa-brands fa-linkedin-in"></i></a>
+
+    <a href="https://www.tiktok.com/@iosoficial"><i class="fa-brands fa-tiktok"></i></a>
+   
+  </div>
+  <div class="footernav">
+
+<a href="#sobre"> Sobre o IOS </a>
+<a href="#mentores"> Mentores POA </a>
+<a href="#cursos"> Cursos </a>
+ <a href="#unidades"> Unidades </a>
+ <a href="#parceiros"> Parceiros </a>
+
+  </div>
+</div>
+
+<div class="footerbottom">
+  <p> Desenvolvido por Eduarda Souza e Júlia Souza | Instituto da Oportunidade Social 2024</p>
+</div>
+
+</footer>
+
+<!-- ACESSIBILIDADE -->
+<script src="https://cdn.userway.org/widget.js" data-account="kCDHqw9ltL"></script>
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+
+<!-- LIBRAS -->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
